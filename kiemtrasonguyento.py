@@ -1,15 +1,11 @@
-number = int(input("nhap vao so nguyen: "))
-if number < 2:
-    print("so nhap vao phai lon hon 2")
-    exit()
+def ktnt(x):
+    kt = True
+    for i in range(2,x):
+        if x % i == 0:
+            break 
+    return kt 
 
-is_prime = True
-
-for i in range(2, int(number / 2) + 1):
-    if number % 1 == 0:
-        is_prime = False
-        break
-if is_prime:
-    print("so %d la so nguyen to" % number)
-else:
-    print("so %d khong phai la so nguyen to" % number)
+#su dung ham de kiem tra so nguyen to
+for i in range(2,100):
+    if ktnt(i) == True:
+        print(i)
