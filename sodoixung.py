@@ -1,13 +1,10 @@
-n=int(input("n="))
+print("gia tri cua x")
+x = int(input())
+max = 0
+while x > 0:
+    y = int(x % 10)
+    x = int(x/10)
+    if y > max:
+        max = y
 
-m=n
-s=int(0)
-while n > 0:
-  a= int(n % 10)
-  s=int(s*10+a)
-  n=int(n/10)
-
-if m==s:
-  print("đây là số đối xứng")
-else:
-  print("đây không phải là số đối xứng")
+print(max)
