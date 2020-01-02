@@ -1,10 +1,5 @@
-year = int(input("year="))
-def checkyear (year):
-
-
-
-    return (((year%4==0) and (year % 100 != 0)) or (year % 400 == 0))
-if (checkyear(year)):
-    print("năm nhuận")
+year = int(input())
+if (((year%4==0) and (year % 100 != 0)) or (year % 400 == 0)):
+    print("1")
 else:
-    print("không phải năm nhuận")
+    print("0")
